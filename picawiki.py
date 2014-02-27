@@ -37,7 +37,7 @@ for titles in get_random_wikipedia_titles(amount):
         word['description'] = page.summary
         word['translations'] = {}
         try:
-            word['imageurl'] = page.images()[0]
+            word['imageurl'] = page.images[0]
         except:
             word['imageurl'] = "http://www.catster.com/files/original.jpg"
         bunch.append(word)
